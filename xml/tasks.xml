@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Task>
+    <Id>1</Id>
+    <Description>Decide what is the next project</Description>
+    <Alias>Alias1</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P10D</RequiredEffortTime>
+    <Level>Expert</Level>
+    <Role>TeamLeader</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>248728764</EngineerId>
+  </Task>
+  <Task>
+    <Id>2</Id>
+    <Description>Check the requirements</Description>
+    <Alias>Alias2</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P20D</RequiredEffortTime>
+    <Level>AdvancedBeginner</Level>
+    <Role>TeamLeader</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>982485477</EngineerId>
+  </Task>
+  <Task>
+    <Id>3</Id>
+    <Description>Choose the most convenient way</Description>
+    <Alias>Alias3</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P3D</RequiredEffortTime>
+    <Level>AdvancedBeginner</Level>
+    <Role>TeamLeader</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>982485477</EngineerId>
+  </Task>
+  <Task>
+    <Id>4</Id>
+    <Description>Decide on the location of the feature</Description>
+    <Alias>Alias4</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P5D</RequiredEffortTime>
+    <Level>AdvancedBeginner</Level>
+    <Role>TeamLeader</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>982485477</EngineerId>
+  </Task>
+  <Task>
+    <Id>5</Id>
+    <Description>Decide on the shape of the feature</Description>
+    <Alias>Alias5</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P2D</RequiredEffortTime>
+    <Level>AdvancedBeginner</Level>
+    <Role>TeamLeader</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>982485477</EngineerId>
+  </Task>
+  <Task>
+    <Id>6</Id>
+    <Description>Work on the design</Description>
+    <Alias>Alias6</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P100D</RequiredEffortTime>
+    <Level>AdvancedBeginner</Level>
+    <Role>GraphicArtist</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>982485477</EngineerId>
+  </Task>
+  <Task>
+    <Id>7</Id>
+    <Description>stage 0 in the programming</Description>
+    <Alias>P0</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P30D</RequiredEffortTime>
+    <Level>Advanced</Level>
+    <Role>Programmer</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>165324683</EngineerId>
+  </Task>
+  <Task>
+    <Id>8</Id>
+    <Description>stage 1 in the programming</Description>
+    <Alias>P1</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P30D</RequiredEffortTime>
+    <Level>Advanced</Level>
+    <Role>Programmer</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>165324683</EngineerId>
+  </Task>
+  <Task>
+    <Id>9</Id>
+    <Description>stage 2 in the programming</Description>
+    <Alias>P2</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P30D</RequiredEffortTime>
+    <Level>Advanced</Level>
+    <Role>Programmer</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>165324683</EngineerId>
+  </Task>
+  <Task>
+    <Id>10</Id>
+    <Description>stage 3 in the programming</Description>
+    <Alias>P3</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P30D</RequiredEffortTime>
+    <Level>Advanced</Level>
+    <Role>Programmer</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>165324683</EngineerId>
+  </Task>
+  <Task>
+    <Id>11</Id>
+    <Description>stage 4 in the programming</Description>
+    <Alias>P4</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P30D</RequiredEffortTime>
+    <Level>Advanced</Level>
+    <Role>Programmer</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>165324683</EngineerId>
+  </Task>
+  <Task>
+    <Id>12</Id>
+    <Description>stage 5 in the programming</Description>
+    <Alias>P5</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P30D</RequiredEffortTime>
+    <Level>Advanced</Level>
+    <Role>Programmer</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>165324683</EngineerId>
+  </Task>
+  <Task>
+    <Id>13</Id>
+    <Description>stage 6 in the programming</Description>
+    <Alias>P6</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P30D</RequiredEffortTime>
+    <Level>Advanced</Level>
+    <Role>Programmer</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>165324683</EngineerId>
+  </Task>
+  <Task>
+    <Id>14</Id>
+    <Description>stage 7 in the programming</Description>
+    <Alias>P6</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P30D</RequiredEffortTime>
+    <Level>Advanced</Level>
+    <Role>Programmer</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>165324683</EngineerId>
+  </Task>
+  <Task>
+    <Id>15</Id>
+    <Description>Run the code</Description>
+    <Alias>Alias15</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P20D</RequiredEffortTime>
+    <Level>Beginner</Level>
+    <Role>Programmer</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>934759393</EngineerId>
+  </Task>
+  <Task>
+    <Id>16</Id>
+    <Description>Find errors in the code </Description>
+    <Alias>Alias16</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P20D</RequiredEffortTime>
+    <Level>Beginner</Level>
+    <Role>Programmer</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>934759393</EngineerId>
+  </Task>
+  <Task>
+    <Id>17</Id>
+    <Description>Get permission from the programmer and pass the code on</Description>
+    <Alias>Alias17</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P6D</RequiredEffortTime>
+    <Level>Beginner</Level>
+    <Role>Programmer</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>934759393</EngineerId>
+  </Task>
+  <Task>
+    <Id>18</Id>
+    <Description>Bring confirmation to the software tester that the code is correct</Description>
+    <Alias>Alias18</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P5D</RequiredEffortTime>
+    <Level>Beginner</Level>
+    <Role>TeamLeader</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>165324683</EngineerId>
+  </Task>
+  <Task>
+    <Id>19</Id>
+    <Description>Send the feature to the advertising team</Description>
+    <Alias>Alias19</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P3D</RequiredEffortTime>
+    <Level>Beginner</Level>
+    <Role>TeamLeader</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>934759393</EngineerId>
+  </Task>
+  <Task>
+    <Id>20</Id>
+    <Description>Update all platforms</Description>
+    <Alias>Alias20</Alias>
+    <Milestone>false</Milestone>
+    <CreateAt>2024-01-01T00:00:00</CreateAt>
+    <RequiredEffortTime>P2D</RequiredEffortTime>
+    <Level>Beginner</Level>
+    <Role>TeamLeader</Role>
+    <Start xsi:nil="true" />
+    <ForecastDate xsi:nil="true" />
+    <Deadline xsi:nil="true" />
+    <Complete xsi:nil="true" />
+    <EngineerId>113634844</EngineerId>
+  </Task>
+</ArrayOfTask>

@@ -1,0 +1,179 @@
+﻿<Window x:Class="PL.Task.TaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL.Task"
+        mc:Ignorable="d"
+        Title="TaskWindow" Height="825" Width="1190"
+DataContext="{Binding RelativeSource={RelativeSource Self}}">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="David"/>
+            <Setter Property="Background" Value="Aqua"/>
+            <Setter Property="Foreground" Value="Indigo"/>
+        </Style>
+        <Style TargetType="DatePicker">
+            <Setter Property="Background" Value="Aqua"/>
+            <Setter Property="Foreground" Value="Indigo"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Background" Value="Aqua"/>
+            <Setter Property="Foreground" Value="Indigo"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontFamily" Value="David"/>
+        </Style>
+        <Style TargetType="ListBox">
+            <Setter Property="Background" Value="Aqua"/>
+            <Setter Property="Foreground" Value="Indigo"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="Indigo"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="225"/>
+            <ColumnDefinition Width="225"/>
+            <ColumnDefinition Width="225"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Labels and Inputs - עמודה ראשונה -->
+        <StackPanel Grid.Column="0" Margin="5">
+            <Label Content="Id:" />
+            <TextBox  Text="{Binding Task.Id, Mode=TwoWay, NotifyOnValidationError=true,  ValidatesOnExceptions=true}" IsEnabled="False"/>
+
+            <Label Content="Description:"/>
+            <TextBox Text="{Binding Task.Description, Mode=TwoWay, NotifyOnValidationError=true,  ValidatesOnExceptions=true}"/>
+
+            <Label Content="Alias:"/>
+            <TextBox  Text="{Binding Task.Alias, Mode=TwoWay, NotifyOnValidationError=true,  ValidatesOnExceptions=true}"/>
+
+            <Label Content="Deliverables:"/>
+            <TextBox  Text="{Binding Task.Deliverables, Mode=TwoWay, NotifyOnValidationError=true,  ValidatesOnExceptions=true}"/>
+
+            <Label Content="Remarks:" />
+            <TextBox  Text="{Binding Task.Remarks, Mode=TwoWay, NotifyOnValidationError=true,  ValidatesOnExceptions=true}"/>
+
+            <Label Content="Create At:" />
+            <DatePicker SelectedDate="{Binding Task.CreateAt, UpdateSourceTrigger=PropertyChanged}" IsEnabled="False"/>
+
+            <Label Content="Required Effort Time:" />
+            <TextBox  Text="{Binding Task.RequiredEffortTime, Mode=TwoWay, NotifyOnValidationError=true,  ValidatesOnExceptions=true}"/>
+
+            <Label Content="Engineer Id:" />
+            <TextBox Text="{Binding Engineer.Id, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, UpdateSourceTrigger=PropertyChanged}" 
+         IsEnabled="False"/>
+
+            <Label Content="Engineer Name:" />
+            <TextBox Text="{Binding Engineer.Name, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, UpdateSourceTrigger=PropertyChanged}" 
+         IsEnabled="False"/>
+
+            <Label Content="Choose An Engineer"/>
+            <ComboBox ItemsSource="{Binding EngineersList}" 
+          DisplayMemberPath="Name" 
+          SelectedValuePath="Id"
+          SelectedValue="{Binding EngineerId, Mode=TwoWay}" 
+          SelectionChanged="ComboBoxEngineer_SelectionChanged"/>
+        </StackPanel>
+
+        <!-- Labels and Inputs - עמודה שנייה -->
+        <StackPanel Grid.Column="1" Margin="5">
+            <Label Content="Level:" />
+            <ComboBox ItemsSource="{Binding Source={StaticResource EngineerExperiencesCollectionKey}}" 
+          SelectedItem="{Binding EngExperience, Mode=TwoWay}" 
+          SelectionChanged="ComboBoxEngExperience_SelectionChanged"/>
+
+            <Label Content="Role:"/>
+            <ComboBox ItemsSource="{Binding Source={StaticResource RolesCollectionKey}}" 
+SelectedValue="{Binding Role, Mode=TwoWay}"
+                      SelectionChanged="ComboBoxRole_SelectionChanged" />
+
+            <Label Content="Status:"/>
+            <ComboBox ItemsSource="{Binding Source={StaticResource StatusCollectionKey}}" 
+SelectedValue="{Binding Task.Status, Mode=TwoWay, NotifyOnValidationError=true, 
+ValidatesOnExceptions=true}" IsEnabled="False"/>
+
+            <Label Content="ForecastDate:" />
+            <DatePicker SelectedDate="{Binding Task.ForecastDate,Mode=TwoWay, 
+                NotifyOnValidationError=true, 
+ValidatesOnExceptions=true}" IsEnabled="False"/>
+
+            <Label Content="Start:"/>
+            <DatePicker SelectedDate="{Binding Task.Start, Mode=TwoWay, 
+                NotifyOnValidationError=true, 
+ValidatesOnExceptions=true}" IsEnabled="True"/>
+
+            <Label Content="Deadline:"/>
+            <DatePicker SelectedDate="{Binding Task.Deadline, Mode=TwoWay,
+                NotifyOnValidationError=true, 
+ValidatesOnExceptions=true}" IsEnabled="False"/>
+
+            <Label Content="Complete:" />
+            <DatePicker SelectedDate="{Binding Task.Complete, Mode=TwoWay,
+                NotifyOnValidationError=true, 
+ValidatesOnExceptions=true}" IsEnabled="True"/>
+        </StackPanel>
+
+        <!-- Labels and Inputs - עמודה שלישית -->
+        <StackPanel Grid.Column="2" Margin="5">
+            <Label Content="MilestoneId:" />
+            <TextBox Text="{Binding Task.Milestone.Id, Mode=TwoWay, NotifyOnValidationError=true,  ValidatesOnExceptions=true}" IsEnabled="False"/>
+
+            <Label Content="MilestoneAlias:" />
+            <TextBox Text="{Binding Task.Milestone.Alias, Mode=TwoWay, NotifyOnValidationError=true,  ValidatesOnExceptions=true}" IsEnabled="False"/>
+
+            <Label Content="Dependencies:"/>
+            <ListBox ItemsSource="{Binding TaskDependencies, UpdateSourceTrigger=PropertyChanged}"
+         SelectionMode="Single" MouseDoubleClick="DependenciesListBox_MouseDoubleClick">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBox Text="{Binding Id, Mode=TwoWay, ValidatesOnExceptions=true}" IsEnabled="False"/>
+                            <TextBox  Text="{Binding Description, Mode=TwoWay, ValidatesOnExceptions=true}" IsEnabled="False"/>
+                            <TextBox  Text="{Binding Alias, Mode=TwoWay, ValidatesOnExceptions=true}" IsEnabled="False"/>
+                            <TextBox Text="{Binding Status, Mode=TwoWay, ValidatesOnExceptions=true}" IsEnabled="False"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <Label Content="Choose more dependencies"/>
+            <ComboBox ItemsSource="{Binding TasksList}" 
+          SelectedValuePath="Id"
+          SelectedValue="{Binding DepTask, Mode=TwoWay}" 
+          SelectionChanged="ComboBoxDepTasks_SelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Alias}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Description}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+        </StackPanel>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Column="3" Margin="5">
+            <Button Grid.Row="9" Grid.Column="0" 
+Content="{Binding Task.Id, Mode=OneTime, Converter={StaticResource ConverIdToContentKey}}" 
+HorizontalAlignment="Left" Margin="3,0,0,0"  VerticalAlignment="Top" Padding="5"   Click="BtnAddUpdate_Click"/>
+
+
+        </StackPanel>
+    </Grid>
+</Window>
