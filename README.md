@@ -1,31 +1,25 @@
-# dotNet5784_0821_6310
+MilestoneTaskManager: Advanced Task Management System
+Overview
+MilestoneTaskManager is a sophisticated task management application designed to help users organize and track the progress of their projects effectively. The system is built using C# 7 and .NET 11, adhering to a multi-tier architecture model. It features a sleek GUI and robust data binding methods to provide a seamless user experience.
 
-# הבונוסים שעשינו:
+Key Features
+Task Management: Create, assign, and track tasks across multiple projects.
+Milestone Tracking: Define and monitor milestones to ensure timely project completion.
+Multi-Tier Architecture: Implements BL, DAL, and PL layers for modular and maintainable code.
+Data Binding: Efficient data handling and binding methods ensure smooth interaction between the GUI and underlying logic.
+DALLIST and DALXAML Implementations: Advanced data access layers designed for performance and scalability.
+Technologies Used
+Language: C# 7
+Framework: .NET 11
+Architecture: Multi-Tier (BL, DAL, PL)
+Additional Features: DALLIST for list-based data access, DALXAML for XAML-based data binding, various utilities for enhanced project management.
+Project Status
+This project is currently in development. Future updates will include more detailed usage instructions and additional features.
 
-שימוש ב-TryParse בתוכניות בדיקה BlTest/DalTest
+Future Plans
+Integration of Notifications: Adding notification support for task deadlines and milestone achievements.
+Reporting Features: Introducing detailed reporting functionalities to track project and task progress.
+Cloud Deployment: Preparing the application for deployment to a cloud environment for wider accessibility.
+About the Project
+MilestoneTaskManager was developed as part of a hands-on project to explore advanced features in task management systems. The project focuses on implementing a comprehensive and user-friendly solution that can be adapted for various professional environments. The current development phase includes testing and optimization before deploying it for broader use.
 
-תמיכה באטריבוטים באלמנטים של dal-config.xml על מנת לקבל גמישות בשמות עבור מרחב שמות, מחלקת מימוש IDal, שם התכונה הסטטית של הסינגלטון, כאשר שם החבילה נשאר עבור שם האסמבלי לטעינה
-
-ניהול משתמשים - מנהל ומהנדס ולכל אחד הרשאות משלו - ראה בהמשך (כלול) הוספת תמיכה (בשכבת GUI) בתמונות מהנדסים
-
-אלגוריתם לבניית לוז אוטומטי כפי המתואר במסמך תיאור כללי עם מיילסטון (כולל ישויות לוגיות מתאימות ובלי-GUI מתאים) 
-
-תוספת תמיכה בתאריך יעד של הפרויקט וב-DeadLine של משימות
-
-תוספת תמיכה במצב InJeopardy במקרה של מצב סיכון תאריך יעד של פרויקט
-
-מחיקה לוגית (סימון עם שדה נוסף "פעיל" או דומה), ניהול אובייקטים שנמחקו ואפשרות לשחזר
-
-בנייה ושימוש במתודות הרחבה גנריות עם רפלקשן
-
-שימוש בטריגרים - טריגר תכונות, טריגר אירועים
-
-שימוש במשאב כללי של Style עבור עיצובי פקדים
-
-שימוש משמעותי בטרנספורמציות (transformation)
-
-הגדרת משתמשים כולל חלוקה למנהל ומהנדס
-
-כניסה למערכת לפי משתמש
-
-חובה לאפשר כניסה של כמה מהנדסים (בחלונות נפרדים) במקביל
